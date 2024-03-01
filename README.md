@@ -1,4 +1,4 @@
-# Teriyaki-booking
+# Hieu-Porfolio
 
 ## Project Require
 
@@ -21,12 +21,6 @@
 ## Install Node, NPM
 
 [How to install nvm](https://github.com/creationix/nvm)
-
-## How to setup
-
-### Clone repository **teriyaki-admin-web**
-
-[https://bitbucket.org/nldanang/teriyaki-user-web/src/develop/](https://bitbucket.org/nldanang/teriyaki-user-web/src/develop/)
 
 ### Run & Build project
 
