@@ -60,7 +60,6 @@
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator';
-import { isDesktopScreen } from '@/shared/utils/helper';
 import { Banner } from '@/shared/models/banner';
 
 @Component({
@@ -95,7 +94,6 @@ export default class HomeBannerComponent extends Vue {
   }
 
   mounted() {
-    isDesktopScreen();
     this.slides = this.resData.map((item) => new Banner().deserialize(item));
   }
 

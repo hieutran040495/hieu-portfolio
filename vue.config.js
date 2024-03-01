@@ -54,7 +54,7 @@ module.exports = {
     },
   },
   pwa: {
-    name: 'teriyaki-booking-web',
+    name: 'hieu-porfolio',
     workboxOptions: {
       skipWaiting: true,
     },
