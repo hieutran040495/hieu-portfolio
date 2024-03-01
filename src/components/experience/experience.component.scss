@@ -1,0 +1,175 @@
+@import '~vuetify/src/styles/styles.sass';
+
+.home-experience {
+  .timeline {
+    position: relative;
+    margin-top: 160px;
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__line {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 3px;
+      top: -77px;
+      bottom: 115px;
+      background-color: #e2d7c1;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 13px;
+        height: 13px;
+        border-radius: 100%;
+        background-color: #e2d7c1;
+        top: -13px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &__detail,
+    &__year {
+      width: calc(50% - 60px);
+    }
+
+    &__detail {
+      h3 {
+        font-size: 24px;
+        margin-bottom: 5px;
+      }
+
+      span {
+        color: var(--extra-color);
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+
+    &__year {
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    &__icon {
+      position: absolute;
+      left: 50%;
+      margin-left: -25px;
+      width: fit-content;
+
+      span {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: block;
+        background: var(--extra-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: #fff;
+        font-weight: bold;
+        font-family: "Reey Regular";
+        border: 5px solid #e2d7c1;
+      }
+    }
+  }
+
+  .page-highlight {
+    background-color: var(--bg-highlight);
+    background-image: url("../../assets/images/vector6.svg");
+    background-position: 100% 100%;
+    position: relative;
+    margin-bottom: -200px;
+    position: relative;
+    z-index: 2;
+  }
+
+  @media (min-width: 769px) {
+    .timeline {
+      &__item {
+        &:nth-child(2n) {
+          flex-direction: row-reverse;
+
+          .timeline__year {
+            text-align: right;
+          }
+
+          .timeline__detail {
+            text-align: left;
+          }
+        }
+      }
+
+      &__detail {
+        text-align: right;
+        box-shadow: 0 14px 20px rgba(188, 183, 174, 0.3);
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #f8f5ef;
+      }
+
+      &__year {
+        padding-top: 10px;
+      }
+
+      &__icon {
+        span {
+          width: 50px;
+          height: 50px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .timeline {
+      margin-left: 35px;
+      padding-left: 35px !important;
+      margin-top: 80px;
+
+      &__item {
+        flex-direction: column;
+      }
+
+      &__line {
+        left: 0;
+        bottom: 0;
+        top: -40px;
+      }
+
+      &__detail,
+      &__year,
+      &__icon {
+        width: 100%;
+      }
+
+      &__detail {
+        order: 2;
+      }
+
+      &__year {
+        order: 3;
+      }
+
+      &__icon {
+        order: 1;
+        left: -30px;
+      }
+    }
+  }
+}
+
+.c-aos {
+  width: 200px;
+  height: 200px;
+  background: #ccc;
+  font-size: 20px;
+  color: black;
+}

@@ -1,0 +1,27 @@
+.s-card-post {
+  &__category {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Quicksand';
+  }
+
+  &__fee {
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+  h2 {
+    font-weight: 600;
+  }
+
+  .v-chip {
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 0 !important;
+    font-family: 'Quicksand';
+  }
+
+  &.v-card {
+    border: 0;
+  }
+}

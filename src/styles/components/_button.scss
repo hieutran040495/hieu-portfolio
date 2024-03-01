@@ -1,0 +1,15 @@
+.v-application .s-btn--half.primary  {
+  background: linear-gradient(to left, transparent 45%, var(--v-primary-base) 45%);
+  background-color: transparent !important;
+  color: var(--v-black-base);
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: none;
+  letter-spacing: 0.17em;
+  padding: 0 30px;
+  border-radius: 0;
+}
+
+.v-btn {
+  text-transform: capitalize;
+}

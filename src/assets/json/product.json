@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "category": {
+        "id": 1,
+        "name": "Body Oil"
+      },
+      "name": "Essential Daily primer",
+      "fee": 100000,
+      "image_url": "@/assets/images/products/product-8.jpg"
+    },
+    {
+      "id": 2,
+      "category": {
+        "id": 1,
+        "name": "Blush Powder"
+      },
+      "name": "Essential Daily primer",
+      "fee": 120000,
+      "image_url": "@/assets/images/products/product-9.jpg"
+    },
+    {
+      "id": 3,
+      "category": {
+        "id": 1,
+        "name": "Cream Foundation"
+      },
+      "name": "Essential Daily primer",
+      "fee": 140000,
+      "image_url": "@/assets/images/products/product-10.jpg"
+    },
+    {
+      "id": 4,
+      "category": {
+        "id": 1,
+        "name": "Marooned Lipstick"
+      },
+      "name": "Essential Daily primer",
+      "fee": 200000,
+      "image_url": "@/assets/images/products/product-11.jpg"
+    }
+  ]
+}

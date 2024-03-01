@@ -1,0 +1,35 @@
+.header {
+  z-index: 3 !important;
+
+  .v-tabs {
+    width: auto;
+    flex: unset;
+  }
+
+  .v-toolbar__content {
+    padding-left: 0;
+    padding-right: 0;
+
+    @extend .s-container;
+  }
+
+  // @media (min-width: 960px) {
+  //   .v-toolbar__content {
+  //     padding-left: 0;
+  //     padding-right: 0;
+  //     max-width: 900px;
+  //     margin: auto;
+  //   }
+
+  // }
+}
+
+.theme--light.v-sheet {
+  &.header {
+    background-color: transparent !important;
+  }
+
+  &.header-animate {
+    background-color: #f3f0ea !important;
+  }
+}

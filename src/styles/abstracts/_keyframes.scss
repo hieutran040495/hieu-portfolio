@@ -1,0 +1,25 @@
+@keyframes animateCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes remove {
+  0% {
+    position: relative;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  90% {
+    position: relative;
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    position: absolute;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,45 @@
+.s-wrapper {
+  margin-top: 64px;
+  min-height: 100vh;
+}
+
+.s-container {
+  margin: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  &--spacing {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  @media (min-width: 960px) {
+    max-width: 900px;
+  }
+
+  @media (min-width: 1264px) {
+    max-width: 1185px;
+  }
+
+  @media (max-width: 959px) {
+    &--spacing {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+}
+
+.theme--light.v-sheet {
+  color: var(--main-color);
+  font-size: 14px;
+  line-height: 30px;
+
+  h1,h2,h3,h4,h5,h6 {
+    color: $text-black;
+  }
+
+  @media (max-width: 959px) {
+    background-color: #fff !important;
+  }
+}
+

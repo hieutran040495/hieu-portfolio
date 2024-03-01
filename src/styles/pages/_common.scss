@@ -1,0 +1,44 @@
+.page-title {
+  position: relative;
+  text-align: center;
+
+  &__shadow {
+    font-family: 'Beau Rivage';
+    font-size: 80px;
+    letter-spacing: 0.05em;
+    opacity: 0.1;
+  }
+
+  &__front {
+    font-size: 40px;
+    line-height: 60px;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    letter-spacing: 0.02em;
+    font-weight: 600;
+  }
+
+  @media (max-width: 959px) {
+    &__shadow {
+      font-size: 50px;
+    }
+
+    &__front {
+      font-size: 22px;
+      bottom: -10px;
+    }
+  }
+
+  @media (max-width: 599px) {
+    &__shadow {
+      font-size: 40px;
+    }
+
+    &__front {
+      font-size: 20px;
+      bottom: -10px;
+    }
+  }
+}

@@ -1,0 +1,220 @@
+.home-about {
+  &__left {
+
+  }
+
+  &__right {
+    padding-left: 40px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    h3 {
+      font-size: 45px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-top: 5px;
+    }
+
+    span {
+      font-size: 18px;
+    }
+  }
+
+  &__progress {
+    &-bar {
+      background: hsla(40,21%,63%,.2);
+      width: 100%;
+      min-width: 100%;
+      position: relative;
+      height: 30px;
+      border-radius: 10px;
+    }
+
+    &-percent {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-top: 12px;
+    }
+
+    &-number {
+      display: inline-block;
+      font-weight: 600;
+      color: #000;
+      padding-left: 10px;
+    }
+  }
+
+  .year {
+    position: relative;
+
+    h3 {
+      font-size: 440px;
+      line-height: 335px;
+      font-weight: 800;
+      background: url("../../assets/images/year.png");
+      background-clip: text;
+      color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-stroke-width: 6px;
+      -webkit-text-stroke-color: #fff;
+      filter: drop-shadow(0 4px 4px rgba(0,0,0,.25));
+      position: relative;
+      z-index: 2;
+      left: 10px;
+    }
+  }
+
+  .year-rounded {
+    width: 260px;
+    height: 260px;
+    border-radius: 100%;
+    background-color: var(--bg-highlight);
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    z-index: 1;
+
+    img {
+      position: absolute;
+      left: -110px;
+      top: -30px;
+    }
+  }
+
+  .experience {
+    font-family: 'Reey Regular';
+    text-align: center;
+    position: relative;
+    margin-left: -45px;
+
+    h3 {
+      font-size: 390px;
+      line-height: 190px;
+      color: var(--extra-color);
+      filter: drop-shadow(0 4px 4px rgba(0,0,0,.25));
+      position: relative;
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-size: 50px;
+      line-height: 50px;
+      font-style: italic;
+      color: var(--extra-color);
+      margin-bottom: 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    .shape {
+      position: absolute;
+      top: 0;
+      left: 60px;
+    }
+
+    .shape-circle {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+  }
+
+  @media (max-width: 1600px) {
+    &__right {
+      padding-left: 0;
+    }
+
+    &__title {
+      margin-bottom: 25px;
+
+      h3 {
+        font-size: 35px;
+      }
+    }
+
+    &__progress {
+      &-bar {
+        height: 22px;
+      }
+
+      &-percent {
+        margin-top: 8px;
+      }
+
+      &-number {
+
+      }
+    }
+
+    .year {
+      h3 {
+        font-size: 360px;
+        line-height: 270px;
+      }
+    }
+
+    .year-rounded {
+      width: 230px;
+      height: 230px;
+    }
+
+    .experience {
+      h3 {
+        font-size: 330px;
+        line-height: 160px;
+      }
+
+      p {
+        font-size: 45px;
+        line-height: 45px;
+      }
+    }
+  }
+
+  @media (max-width: 1263px) {
+    &__right {
+      padding-left: 0;
+    }
+
+    &__progress {
+      &-bar {
+        height: 10px;
+      }
+    }
+
+    .year {
+      h3 {
+        font-size: 200px;
+        line-height: 150px;
+      }
+    }
+
+    .year-rounded {
+      display: none;
+    }
+
+    .experience {
+      margin-left: 0;
+
+      h3 {
+        font-size: 200px;
+        line-height: 100px;
+        margin-bottom: 5px
+      }
+
+      p {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 5px;
+      }
+
+      .shape,
+      .shape-circle {
+        display: none;
+      }
+    }
+  }
+}

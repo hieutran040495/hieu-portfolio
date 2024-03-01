@@ -1,0 +1,47 @@
+@charset "UTF-8";
+//1. Configuration and helpers
+@import 'abstracts/index.scss';
+
+//2. Vendors
+@import 'vendors/index.scss';
+
+//3. Base stuff
+//@import 'base/reset';
+
+//4. components
+@import 'components/index.scss';
+
+
+//5. Page-specific styles
+@import 'pages/index.scss';
+
+//6. Layout-related sections
+@import 'layouts/index.scss';
+
+.theme--light {
+  &.v-sheet {
+    background-color: var(--bg-main) !important;
+  }
+}
+
+body {
+  // color: $main-color;
+  // background-color: #f3f0ea;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ctn-wrp {
+    max-height: 100vh;
+    color: var(--main-color);
+    background-color: #f3f0ea;
+    position: relative;
+  }
+}
+
+.v-navigation-drawer {
+  .v-list {
+    height: 100%;
+  }
+}
